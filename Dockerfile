@@ -1,4 +1,4 @@
-FROM gliderlabs/alpine:3.5
+FROM alpine:3.5
 
 # Version of RabbitMQ to install
 ENV RABBITMQ_VERSION=3.6.9
