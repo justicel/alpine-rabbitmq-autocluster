@@ -50,22 +50,7 @@ RUN \
   chown rabbitmq /var/lib/rabbitmq/.erlang.cookie /var/lib/rabbitmq /usr/lib/rabbitmq && \
   chmod 0600 /var/lib/rabbitmq/.erlang.cookie && \
   rabbitmq-plugins enable --offline \
-        autocluster \
-        rabbitmq_delayed_message_exchange \
-        rabbitmq_management \
-        rabbitmq_management_visualiser \
-        rabbitmq_consistent_hash_exchange \
-        rabbitmq_federation \
-        rabbitmq_federation_management \
-        rabbitmq_message_timestamp \
-        rabbitmq_mqtt \
-        rabbitmq_recent_history_exchange \
-        rabbitmq_sharding \
-        rabbitmq_shovel \
-        rabbitmq_shovel_management \
-        rabbitmq_stomp \
-        rabbitmq_top \
-        rabbitmq_web_stomp && \
+        autocluster && \
   rabbitmq-plugins list
 
 EXPOSE 4369 5671 5672 15672 25672
