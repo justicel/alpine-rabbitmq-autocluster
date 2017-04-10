@@ -49,7 +49,7 @@ RUN \
   apk --purge del curl tar gzip xz && \
   chown rabbitmq /var/lib/rabbitmq/.erlang.cookie /var/lib/rabbitmq /usr/lib/rabbitmq && \
   chmod 0600 /var/lib/rabbitmq/.erlang.cookie && \
-  rabbitmq-plugins enable --offline \rabb
+  rabbitmq-plugins enable --offline \
         autocluster \
         rabbitmq_management \
         rabbitmq_management_agent && \
